@@ -1,0 +1,38 @@
+{
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/comida/",
+      "permanent": false
+    },
+    {
+      "source": "/comida",
+      "destination": "/comida/",
+      "permanent": false
+    },
+    {
+      "source": "/bebidas",
+      "destination": "/bebidas/",
+      "permanent": false
+    },
+    {
+      "source": "/drinks",
+      "destination": "/drinks/",
+      "permanent": false
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/comida/:path*",
+      "destination": "https://payol-comidas-s-foto.vercel.app/:path*"
+    },
+    {
+      "source": "/bebidas/:path*",
+      "destination": "https://payol-bebidas-s-foto.vercel.app/:path*"
+    },
+    {
+      "source": "/drinks/:path*",
+      "destination": "https://drinks-s-foto.vercel.app/:path*"
+    }
+  ]
+}
