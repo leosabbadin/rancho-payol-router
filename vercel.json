@@ -1,34 +1,36 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+
   "redirects": [
     {
       "source": "/",
-      "destination": "/comida/",
-      "permanent": false
-    },
-    {
-      "source": "/comida",
-      "destination": "/comida/",
-      "permanent": false
-    },
-    {
-      "source": "/bebidas",
-      "destination": "/bebidas/",
-      "permanent": false
-    },
-    {
-      "source": "/drinks",
-      "destination": "/drinks/",
+      "destination": "/comida",
       "permanent": false
     }
   ],
+
   "rewrites": [
+    {
+      "source": "/comida",
+      "destination": "https://payol-comidas-s-foto.vercel.app/"
+    },
     {
       "source": "/comida/:path*",
       "destination": "https://payol-comidas-s-foto.vercel.app/:path*"
     },
+
+    {
+      "source": "/bebidas",
+      "destination": "https://payol-bebidas-s-foto.vercel.app/"
+    },
     {
       "source": "/bebidas/:path*",
       "destination": "https://payol-bebidas-s-foto.vercel.app/:path*"
+    },
+
+    {
+      "source": "/drinks",
+      "destination": "https://drinks-s-foto.vercel.app/"
     },
     {
       "source": "/drinks/:path*",
